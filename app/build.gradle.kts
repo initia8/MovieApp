@@ -8,8 +8,13 @@ plugins {
 android {
     namespace = "com.example.movieapp"
     compileSdk = 34
-
+    buildFeatures {
+        buildConfig = true
+    }
     defaultConfig {
+        buildConfigField("String", "MOVIE_API_KEY", "${property("MOVIE_API_KEY")}")
+       // buildConfigField("String", "MOVIE_API_KEY", "\"${project.findProperty("MOVIE_API_KEY") ?: ""}\"")
+
         applicationId = "com.example.movieapp"
         minSdk = 24
         targetSdk = 34
