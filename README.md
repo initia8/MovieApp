@@ -10,7 +10,6 @@ The app interacts with The Movie Database (TMDb) API to fetch movie data and use
 * Save  movies to favorites  
 * Handle network requests and errors gracefully  
 * Persist favorite movies using RoomDB  
-* Unit tests for API integration and data handling  
 
 ##  Tech Stack
 - **Kotlin** - Primary language  
